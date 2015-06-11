@@ -1,0 +1,11 @@
+
+<div class="container">
+
+<h1> Items on Auction </h1>
+
+<ul>
+  {{#each}}
+  <li>{{#link-to 'item' this.id}} <img {{bind-attr src=image}}> {{/link-to}}</li>
+  {{/each}}
+</ul>
+</div>
